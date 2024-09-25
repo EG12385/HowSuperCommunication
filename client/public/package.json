@@ -1,0 +1,29 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rm -rf .parcel-cache && parcel react-scripts start",
+    "clean": "rm -rf dist/*",
+    "build:parcel": "parcel build public/src/index.html --no-minify --no-source-maps --public-url ./",
+    "build": "npm run clean && npm run build:parcel react-scripts build"
+  },
+  "keywords": [],
+  "author": "Estelle",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^5.16.7",
+    "@mui/material": "^5.16.7",
+    "gsap": "^3.12.5",
+    "imagesloaded": "^5.0.0",
+    "parcel": "^2.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0",
+    "splitting": "^1.1.0"
+  }
+}
