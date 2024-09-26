@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { RouterProvider, createBrowserRouter} from 'react-router-dom';
-import Layout from './componants/Layout';
-import ErrorPage from './pages/ErrorPage';
-import Home from './pages/Home';
-import Register from './pages/Register';
-import Login from './pages/Login';
-import ClientProfile from "./pages/ClientProfile";
-import Team from "./pages/Team";
+//import React from 'react';
+//import ReactDOM from 'react-dom/client';
+//import { RouterProvider, createBrowserRouter} from 'react-router-dom';
+//import Layout from './componants/Layout';
+//import ErrorPage from './pages/ErrorPage';
+//import Home from './pages/Home';
+//import Register from './pages/Register';
+//import Login from './pages/Login';
+//import ClientProfile from "./pages/ClientProfile";
+//import Team from "./pages/Team";
 
 
 import './css/index.css';
@@ -20,14 +20,14 @@ import ClientProvider from './context/clientContext';
 const router = createBrowserRouter([
     {
      path: "/",
-     element: <ClientProvider><Layout/></ClientProvider>,
-     errorElement: <ErrorPage/>,
-     children : [
-     {index: true, element: <Home />},
-     {path: "/register", element: <Register />},
-     {path: "/login", element: <Login />},
-     {path: "clients/profile/:id", element: <ClientProfile />},
-     {path: "/clients", element: <Team />},
+     //element: <ClientProvider><Layout/></ClientProvider>,
+     //errorElement: <ErrorPage/>,
+     //children : [
+    // {index: true, element: <Home />},
+     //{path: "/register", element: <Register />},
+     //{path: "/login", element: <Login />},
+    // {path: "clients/profile/:id", element: <ClientProfile />},
+     //{path: "/clients", element: <Team />},
     
      //{path: "profile/id", element: <UserProfile />},
      ]
